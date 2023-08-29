@@ -1,40 +1,43 @@
 <template>
     <div>
-      <h2>Consumo de API con Axios en Vue.js 3</h2>
+      <h2>Consumo de API de Rick and Morty con Axios en Vue.js 3</h2>
       <div>
-        <ul>
-          <li v-for="item in data" :key="item.id">{{ item.title }}</li>
+        <button @click="consumeData">Cargar Datos</button>
+        <ul v-if="nombres.length > 0">
+          <li v-for="nombre in nombres" :key="character.id">{{ character.name }}</li>
         </ul>
+      </div>
+      <div>
+        <h1>{{ msj }}</h1>
       </div>
     </div>
   </template>
   
-  
   <script>
-
   import { ref } from 'vue';
   import axios from 'axios';
   
   export default {
     name: 'ApiExample',
-    data() {
+    setup() {
       // Estado para almacenar los datos de la API
-      const data = ref([]);
-    
+      const nombres = ref([]);
+      // variable jaja
+      const msj = "Texto prueba para renderizar";
       // Función para cargar los datos desde la API
       const consumeData = async () => {
-        const URL = "https://restcountries.com/v3.1/lang/spanish";
-            axios.get(URL)
-            .then((res) => URL.data)
-            .catch((err) => console.log(err.data))
-        
+        try {
+          const response = await axios.get("https://rickandmortyapi.com/api/character");
+          nombres.value = console.log(response.data.results);
+        } catch (error) {
+          console.log('Error al cargar los datos:', error);
+        } 
       };
-
-      console.log(data)
-  
+      
       return {
-        data,
+        nombres,
         consumeData,
+        msj,
       };
     },
   };
