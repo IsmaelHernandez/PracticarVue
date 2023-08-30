@@ -1,6 +1,6 @@
 # IntroVue
 
-This template should help get you started developing with Vue 3 in Vite.
+Este proyecto fue creado para conceptualizar vue.js y practicar su arquitectura de desarrollo!
 
 ## Recommended IDE Setup
 
