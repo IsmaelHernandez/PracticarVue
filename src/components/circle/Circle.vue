@@ -19,13 +19,13 @@ export default {
   name: "Circle",
   data() {
     return {
-      isYellow: true,
+      isYellow: true
     };
   },
   methods: {
     toggleColor() {
       this.isYellow = !this.isYellow;
     },
-  },
+  }
 };
 </script>

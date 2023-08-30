@@ -1,0 +1,21 @@
+.containerForm{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #2471A3;
+}
+
+.itemForm{
+     width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: #BFC9CA;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.danger {
+    color: red;
+}
