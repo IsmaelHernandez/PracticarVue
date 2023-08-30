@@ -5,13 +5,14 @@
         <div v-for="(item, index) in arrayData" :key="index"
         >
         <!-- Mediante props mando al componente hijo -->
-          <CardList
+          <CardList @custom-event="handleCustomEvent" 
             :id="index"
             :name="item.name ?? ''"
             :lastname="item.lastname ?? ''"
             :country="item.country ?? ''"
           />
         </div>
+        <p>Mensaje del hijo: {{ receivedMessage }}</p>
       </div>
     </div>
   </template>
@@ -45,9 +46,15 @@
                     country: 'Mexico'
                 }
 
-            ]
+            ],
+            receivedMessage: ''
         }
+    },
+    methods: {
+    handleCustomEvent(message) {
+      this.receivedMessage = message;
     }
+  }
   }
   </script>
   

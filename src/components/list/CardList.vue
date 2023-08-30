@@ -5,6 +5,8 @@
             <li>{{ name }}</li>
             <li>{{ lastname }}</li>
             <li>{{ country }}</li>
+            <button @click="sendMessage">Mensaje al padre</button>
+            
         </ul>
     </div>
 </template>
@@ -30,5 +32,10 @@ export default {
       required: true,
     }
   },
+  methods: {
+    sendMessage() {
+      this.$emit('custom-event', `Yo soy el usuario ${this.name} y mi ID es ${this.id}`);
+    }
+  }
 
 };</script>
