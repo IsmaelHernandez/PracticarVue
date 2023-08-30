@@ -4,8 +4,8 @@
       <h1 class="title">Contador</h1>
       <p class="title">Valor del contador: {{ counter }}</p>
       <div class="itemBotom">
-        <button class="" @click="increment">Incrementar</button>
-        <button class="" @click="decrement">Decrementar</button>
+        <button class="" @click="increment">+</button>
+        <button class="" @click="decrement">-</button>
         <button class="" @click="reset">Reset</button>
       </div>
     </div>
