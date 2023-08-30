@@ -2,6 +2,7 @@
 import Counter from "./components/counter/Counter.vue";
 import Circle from "./components/circle/Circle.vue";
 import FormComponent from "./components/form/FormComponent.vue";
+import ListComponent from "./components/list/ListComponent.vue"
 </script>
 
 <template>
@@ -11,4 +12,6 @@ import FormComponent from "./components/form/FormComponent.vue";
   <Circle />
   <!-- Componente Form -->
   <FormComponent />
+   <!-- Componente props -->
+   <ListComponent />
 </template>
