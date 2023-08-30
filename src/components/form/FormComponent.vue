@@ -4,9 +4,9 @@
       <h1>Formulario de Usuario</h1>
       <form>
         <label for="username">Nombre de Usuario:</label>
-        <input id="username" v-model="username" />
+        <input id="username" v-model="userName" />
       </form>
-      <p class="danger">{{ usernameMessage }}</p>
+      <p class="danger">{{ userNameMessage }}</p>
     </div>
   </div>
 </template>
@@ -18,8 +18,8 @@ export default {
   name: "FormComponent ",
   data() {
     return {
-      username: "",
-      usernameMessage: "",
+      userName: "",
+      userNameMessage: "",
     };
   },
   watch: {
@@ -30,9 +30,9 @@ export default {
   methods: {
     validateUsername(username) {
       if (username.length < 6) {
-        this.usernameMessage = "El nombre de usuario debe tener al menos 6 letras.";
+        this.userNameMessage = "El nombre de usuario debe tener al menos 6 letras.";
       } else {
-        this.usernameMessage = "";
+        this.userNameMessage = "";
       }
     },
   },
