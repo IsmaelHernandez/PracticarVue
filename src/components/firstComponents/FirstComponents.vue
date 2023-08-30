@@ -4,7 +4,7 @@
       <div>
         <button @click="consumeData">Cargar Datos</button>
         <ul v-if="nombres.length > 0">
-          <li v-for="nombre in nombres" :key="character.id">{{ character.name }}</li>
+          <li v-for="nombre in nombres" :key="nombre.id">{{ nombre.name }}</li>
         </ul>
       </div>
       <div>
@@ -18,7 +18,8 @@
   import axios from 'axios';
   
   export default {
-    name: 'ApiExample',
+    name: 'FirstComponents ',
+    // metodo constructor para inicializar
     setup() {
       // Estado para almacenar los datos de la API
       const nombres = ref([]);
