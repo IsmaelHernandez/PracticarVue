@@ -10,6 +10,7 @@
     width: calc(33.33% - 6px); /* Calcula el ancho para 3 elementos por fila con margen */
     margin: 2px;
     background-color: aquamarine;
-    width: 200px;
+    width: 400px;
     box-sizing: border-box; 
 }
+

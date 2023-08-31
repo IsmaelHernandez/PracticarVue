@@ -1,7 +1,7 @@
 <template>
-  <div class="">
-    <div class="">
-      <h1>Lista de datos prueba</h1>
+  <div>
+    <h1>Lista de datos prueba</h1>
+    <div class="containerList">
       <div class="" v-for="(item, index) in users" :key="index">
         <!-- Mediante props mando al componente hijo -->
         <PokemonList
@@ -12,14 +12,13 @@
           :website="item.website ?? ''"
         />
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
 import PokemonList from "../PokemonList.vue";
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   components: {
