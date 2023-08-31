@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="itemList">
         <ul>
             <li>{{ id }}</li>
             <li>{{ name }}</li>
@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import "@/assets/css/list/list.css";
 export default {
   name: 'CardList',
   props: {

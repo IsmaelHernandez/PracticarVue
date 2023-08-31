@@ -1,20 +1,92 @@
-.header {
-  background-color: #f0f0f0;
-  padding: 10px;
+/* Estilos para el encabezado */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff; /* Azul brillante */
+  padding: 10px 20px;
+  color: white;
 }
 
-.nav ul {
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.icon-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff; /* Blanco */
+  margin: 2px auto;
+}
+
+.navbar-links {
   list-style: none;
-  padding: 0;
+  display: flex;
   margin: 0;
+  padding: 0;
 }
 
-.nav ul li {
-  display: inline-block;
-  margin-right: 10px;
+.navbar-links li {
+  margin-right: 20px;
 }
 
-.nav ul li a {
-  text-decoration: none;
-  color: #333;
+/* Estilo para la pestaña activa */
+.navbar-links li a.active {
+  background-color: #0056b3; /* Azul más oscuro */
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #007bff; /* Azul brillante */
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  /* Estilo para la pestaña activa en el menú hamburguesa */
+  .navbar-links li a.active {
+    background-color: #0056b3; /* Azul más oscuro */
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+  }
 }

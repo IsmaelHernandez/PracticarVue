@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="containerList">
         <div class="">
             <h1>Lista de datos prueba</h1>
         <div v-for="(item, index) in arrayData" :key="index"

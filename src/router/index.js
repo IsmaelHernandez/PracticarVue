@@ -1,15 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import routesCounter from './counter'
-import routesCircle from './circle'
-import routesForm from './form'
-import routesList from './list'
+import Counter from '@/components/counter/Counter.vue'
+import Circle from '@/components/circle/Circle.vue'
+import Form from '@/components/form/FormComponent.vue'
+import List from '@/components/list/ListComponent.vue'
 
 const routes = [
-    routesCounter,
-    routesCircle,
-    routesForm,
-    routesList
+    { path: '/counter', component: Counter },
+    { path: '/circle', component: Circle },
+    { path: '/form', component: Form },
+    { path: '/list', component: List },
+    
+   
 ];
 
 const router = createRouter({

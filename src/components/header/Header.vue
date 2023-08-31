@@ -1,27 +1,24 @@
 <template>
-    <header>
-      <nav>
-        <ul>
-          <li v-for="route in routes" :key="route.name">
-            <router-link :to="route.path">{{ route.name }}</router-link>
-          </li>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">Practica Vue</div>
+      <div class="navbar-menu">
+        <ul class="navbar-links">
+          <li><router-link to="/counter">Counter</router-link></li>
+          <li><router-link to="/circle">Circle</router-link></li>
+          <li><router-link to="/form">Form</router-link></li>
+          <li><router-link to="/list">List</router-link></li>
         </ul>
-      </nav>
-    </header>
-  </template>
-  
-  <script>
-  import "@/assets/css/header/header.css";
-  export default {
-    data() {
-      return {
-        routes: [],
-      };
-    },
-    created() {
-      this.routes = this.$router.options.routes.filter((route) => route.name);
-    },
-  };
-  </script>
-  
- 
+      </div>
+    </nav>
+  </header>
+</template>
+<script>
+import "@/assets/css/header/header.css";
+
+export default {
+  name: 'Header'
+}
+</script>
+
+

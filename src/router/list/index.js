@@ -1,8 +1,8 @@
-const routesList = {
-    path: '/form',
-    name: 'form',
+const List = {
+    path: '/list',
+    name: 'list',
     component: () =>
         import('@/components/list/ListComponent.vue'),
 };
 
-export default routesList;
+export default List;

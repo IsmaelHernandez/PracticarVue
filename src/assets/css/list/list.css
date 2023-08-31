@@ -1,0 +1,12 @@
+.containerList {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #1B4F72;
+}
+
+.itemList {
+    width: 400px;
+    background-color: aquamarine;
+}
