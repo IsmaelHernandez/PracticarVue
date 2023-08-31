@@ -2,12 +2,14 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center; /* Cambio de space-evenly a space-between */
     background-color: #1B4F72;
 }
 
 .itemList {
-    width: 400px;
+    width: calc(33.33% - 6px); /* Calcula el ancho para 3 elementos por fila con margen */
+    margin: 2px;
     background-color: aquamarine;
-    height: 100px;
+    width: 200px;
+    box-sizing: border-box; 
 }

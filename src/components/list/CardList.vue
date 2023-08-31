@@ -1,5 +1,6 @@
 <template>
-    <div class="itemList">
+    <div class="containerList">
+      <div class="itemList">
         <ul>
             <li>{{ id }}</li>
             <li>{{ name }}</li>
@@ -8,6 +9,7 @@
             <button @click="sendMessage">Mensaje al padre</button>
             
         </ul>
+    </div>
     </div>
 </template>
 
@@ -39,4 +41,5 @@ export default {
     }
   }
 
-};</script>
+};
+</script>
