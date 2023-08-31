@@ -8,6 +8,7 @@
           <li><router-link to="/circle">Circle</router-link></li>
           <li><router-link to="/form">Form</router-link></li>
           <li><router-link to="/list">List</router-link></li>
+          <li><router-link to="/pokedex">Pokedex</router-link></li>
         </ul>
       </div>
     </nav>

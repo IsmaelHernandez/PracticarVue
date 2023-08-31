@@ -41,7 +41,7 @@
                 },
                 {
                     id: 3,
-                    name: 'Monica',
+                    name: 'Ivana',
                     lastname: 'Hernandez',
                     country: 'Mexico'
                 }
