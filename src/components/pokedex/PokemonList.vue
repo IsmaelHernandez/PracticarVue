@@ -31,7 +31,6 @@
       required: true,
     }
   }
-
 };
   </script>
   

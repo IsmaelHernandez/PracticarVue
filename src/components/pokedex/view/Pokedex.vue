@@ -5,7 +5,6 @@
       <div class="" v-for="(item, index) in users" :key="index">
         <!-- Mediante props mando al componente hijo -->
         <PokemonList
-          @custom-event="handleDetailUser"
           :id="index"
           :username="item.username ?? ''"
           :phone="item.phone ?? ''"
@@ -27,8 +26,10 @@ export default {
   data() {
     return {
       users: [],
+      isModalOpen: false,
     };
   },
+  //ciclo de vida
   // para iniciar la obtención de datos de los usuarios justo después de que el componente se haya montado en el DOM.
   mounted() {
     this.getUserData();
@@ -38,7 +39,7 @@ export default {
       axios
         .get("https://jsonplaceholder.typicode.com/users")
         .then((response) => {
-          this.users = response.data; // Asignar a 'users', no a 'user'
+          this.users = response.data; // data-user
           this.isLoading = false;
           console.log(response.data);
         })
@@ -47,6 +48,6 @@ export default {
           this.isLoading = false;
         });
     },
-  },
+  }
 };
 </script>
