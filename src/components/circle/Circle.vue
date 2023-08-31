@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Circle from "./Circle.vue";
+
 import "@/assets/css/circle/circle.css";
 export default {
   name: "Circle",

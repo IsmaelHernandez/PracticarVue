@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Counter from "./Counter.vue";
+
 import "@/assets/css/counter/counter.css";
 
 export default {

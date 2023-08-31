@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import FormComponent from "./FormComponent.vue";
+
 import "@/assets/css/form/form.css";
 export default {
   name: "FormComponent ",
