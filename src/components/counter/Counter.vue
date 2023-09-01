@@ -2,12 +2,13 @@
   <div class="containerCounter">
     <div class="itemCounter">
       <h1 class="title">Contador</h1>
-      <p class="title">Valor del contador: {{ counter }}</p>
+      <p :style="{ color: counterColor }">Contador: {{ counter }}</p>
       <div class="itemBotom">
         <button class="" @click="increment">+</button>
         <button class="" @click="decrement">-</button>
         <button class="" @click="reset">Reset</button>
       </div>
+      <p>Valor anterior: {{ previousCounter }}</p>
     </div>
   </div>
 </template>
@@ -21,10 +22,14 @@ export default {
   data() {
     return {
       counter: 0,
+      previousCounter: 0,
+      counterColor: 'black',
+       
     };
   },
   methods: {
     increment() {
+      this.previousCounter = this.counter;
       this.counter++;
     },
     decrement() {
@@ -33,6 +38,19 @@ export default {
     reset() {
       this.counter = 0;
     },
+  },
+  beforeUpdate() {
+    if (this.counter > this.previousCounter) {
+      this.counterColor = 'green';
+    } else if (this.counter < this.previousCounter) {
+      this.counterColor = 'red';
+    } else {
+      this.counterColor = 'black';
+    }
+  },
+  updated() {
+    // Puedes realizar acciones aquí que dependan de la vista actualizada
+    console.log("La vista se ha actualizado.");
   },
 };
 </script>
