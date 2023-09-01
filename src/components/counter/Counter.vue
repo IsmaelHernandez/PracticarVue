@@ -44,7 +44,7 @@ export default {
       this.counterColor = 'green';
     } else if (this.counter < this.previousCounter) {
       this.counterColor = 'red';
-    } else {
+    } else if (this.counter == 0){
       this.counterColor = 'black';
     }
   },
