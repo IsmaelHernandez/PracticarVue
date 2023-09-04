@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Pantalla",
+    "price": 100,
+    "id": "1",
+    "amount": 22
+  },
+  {
+    "price": 200,
+    "id": "2",
+    "title": "Estereo",
+    "amount": 13
+  },
+  {
+    "price": 300,
+    "id": "3",
+    "title": "Audifonos",
+    "amount": 56
+  },
+  {
+    "price": 400,
+    "id": "4",
+    "title": "DVD",
+    "amount": 36
+  },
+  {
+    "price": 500,
+    "id": "5",
+    "title": "Bocina Bosse",
+    "amount": 78
+  },
+  {
+    "price": 600,
+    "id": "6",
+    "title": "Laptop",
+    "amount": 37
+  },
+  {
+    "price": 700,
+    "id": "7",
+    "title": "Macbook",
+    "amount": 68
+  },
+  {
+    "price": 800,
+    "id": "8",
+    "title": "Mouse Inalambrico",
+    "amount": 48
+  },
+  {
+    "price": 900,
+    "id": "9",
+    "title": "Teclado Mecanico",
+    "amount": 600
+  },
+  {
+    "price": 1200,
+    "id": "10",
+    "title": "Mochila Nike",
+    "amount": 75
+  }
+
+]
