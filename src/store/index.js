@@ -16,7 +16,7 @@ const store = createStore({
       state.carrito[paylod.id] = paylod
     },
     increment(state) {
-      state.count++;
+      state.count = count + 1;
     },
     
   },

@@ -1,26 +1,30 @@
-const arr = [1, 2, 3, 4, 5];
+/* Función descriptiva
+
+Complete la función miniMaxSum en el editor a continuación.
+
+miniMaxSum tiene los siguientes parámetros:
+
+arr: una matriz de números enteros
+Imprimir
+
+Imprime dos números enteros separados por espacios en una línea: la suma mínima y la suma máxima de elementos.
+
+Formato de entrada
+
+Una sola línea de cinco números enteros separados por espacios. */
+
+const arr = [1,3,5,7,9];
 
 function miniMaxSum(arr) {
-  let sumaMin = arr[0];
-    let sumaMax = arr[0];
-    let sumTotal = 0;
+  //ordeno el array de forma ascendente
+  arr.sort((a, b) => a - b);
+  //suma minima
+  const minSum = arr[0] + arr[1] + arr[2] + arr[3];
+  //suma maxima
+  const maxSum = arr[1] + arr[2] + arr[3] + arr[4];
+  
+   console.log(minSum + " " + maxSum);
 
-  for (let i = 0; i < arr.length; i++) {
-    sumTotal += arr[i];
-
-    if (arr[i] < sumaMin) {
-      sumaMin = arr[i];
-    }
-
-    if (arr[i] > sumaMax) {
-      sumaMax = arr[i];
-    }
-  }
-
-  const minSum = sumTotal - sumaMax;
-  const maxSum = sumTotal - sumaMin;
-
-  return [minSum, maxSum];
 }
 
 console.log(miniMaxSum(arr))
