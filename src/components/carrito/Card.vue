@@ -39,6 +39,10 @@ export default {
       type: Number,
       required: true,
     },
+    name: {
+      type: String,
+      required: false
+    }
   },
   
 };
