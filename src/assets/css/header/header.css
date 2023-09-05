@@ -51,6 +51,11 @@
   color: white;
 }
 
+a {
+  color: #5D6D7E !important;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .navbar-menu {
     flex-direction: column;

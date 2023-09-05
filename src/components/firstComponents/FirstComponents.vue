@@ -44,7 +44,5 @@
   };
   </script>
   
-  <style scoped>
-  /* Estilos específicos para el componente */
-  </style>
+ 
   

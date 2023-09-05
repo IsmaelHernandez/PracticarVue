@@ -1,6 +1,6 @@
 const Carrito = {
-    path: '/counter',
-    name: 'counter',
+    path: '/carrito-component',
+    name: 'carrito',
     component: () =>
         import('@/components/carrito/Carrito.vue'),
 };

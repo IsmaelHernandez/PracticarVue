@@ -19,7 +19,13 @@
 .title {
     display: flex;
   justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
+  align-content: center; /* Centrado vertical */
+}
+
+.center-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

@@ -1,5 +1,5 @@
 const pokedex = {
-    path: '/pokedex',
+    path: '/pokedex-component',
     name: 'pokedex',
     component: () => import('@/components/pokedex/view/Pokedex.vue'),
     children: [

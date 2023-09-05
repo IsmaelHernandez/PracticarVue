@@ -1,5 +1,5 @@
 const Circle = {
-    path: '/circle',
+    path: '/circle-component',
     name: 'circle',
     component: () =>
         import('@/components/circle/Circle.vue'),
