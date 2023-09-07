@@ -6,14 +6,17 @@ import Form from '@/components/form/FormComponent.vue'
 import List from '@/components/list/ListComponent.vue'
 import pokedex from '@/components/pokedex/view/Pokedex.vue'
 import Carrito from '@/components/carrito/Carrito.vue'
+import Dashboard from '@/components/dashboard/Dashboard.vue'
+
 
 const routes = [
-    { path: '/counter', component: Counter },
-    { path: '/circle', component: Circle },
-    { path: '/form', component: Form },
-    { path: '/list', component: List },
-    { path: '/pokedex', component: pokedex },
-    { path: '/carrito', component: Carrito },
+    { path: '/', component: Dashboard },
+    { path: '/counter-component', component: Counter },
+    { path: '/circle-component', component: Circle },
+    { path: '/form-component', component: Form },
+    { path: '/list-component', component: List },
+    { path: '/pokedex-component', component: pokedex },
+    { path: '/carrito-component', component: Carrito },
     
    
 ];

@@ -1,19 +1,19 @@
 <template>
   <div class="containerCounter">
-    <div>
-    <p>Contador desde la store: </p>
-    <h1>{{ count }}</h1>
-    <button @click="getCount">Incrementar</button>
-  </div>
     <div class="itemCounter">
       <h1 class="title">Contador</h1>
-      <p :style="{ color: counterColor }">Contador: {{ counter }}</p>
+      <div class="center-p">
+        <p :style="{ color: counterColor }">Contador: {{ counter }}</p>
+      </div>
       <div class="itemBotom">
         <button class="" @click="increment">+</button>
         <button class="" @click="decrement">-</button>
         <button class="" @click="reset">Reset</button>
       </div>
-      <p>Valor anterior: {{ previousCounter }}</p>
+      <br>
+      <div class="center-p">
+        <p>Valor anterior: {{ previousCounter }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -22,28 +22,19 @@
 
 import "@/assets/css/counter/counter.css";
 import { useStore } from "vuex";
-import { computed } from "vue";
 
 export default {
   name: "Counter ",
   setup(){
     const store = useStore();
-    //Mapeamos al state
-    const count = computed(() => store.state.count)
+   
   },
   data() {
     return {
       counter: 0,
       previousCounter: 0,
       counterColor: 'black',
-     
-  
     };
-  },
-  computed: {
-    getCount() {
-      return store.state.count
-    },
   },
   methods: {
     increment() {
@@ -73,6 +64,4 @@ export default {
 };
 </script>
 
-<style>
-/* Estilos para tu componente */
-</style>
+

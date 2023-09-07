@@ -1,5 +1,5 @@
 const List = {
-    path: '/list',
+    path: '/list-component',
     name: 'list',
     component: () =>
         import('@/components/list/ListComponent.vue'),

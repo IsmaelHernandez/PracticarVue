@@ -1,5 +1,5 @@
 const Form = {
-    path: '/form',
+    path: '/form-component',
     name: 'form',
     component: () =>
         import('@/components/form/FormComponent.vue'),

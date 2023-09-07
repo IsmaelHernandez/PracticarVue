@@ -6,6 +6,7 @@
             <li>{{ name }}</li>
             <li>{{ lastname }}</li>
             <li>{{ country }}</li>
+            <li>{{ text }}</li>
             <button @click="sendMessage">Mensaje al padre</button>
             
         </ul>
@@ -33,6 +34,10 @@ export default {
     country: {
       type: String,
       required: true,
+    },
+    text: {
+      type: String,
+      default: 'fsfs'
     }
   },
   methods: {

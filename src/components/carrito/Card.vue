@@ -16,16 +16,16 @@
 <script>
 import { useStore } from "vuex";
 export default {
-    setup(){
-        const store = useStore();
-        const add = props => {
-            store.dispatch('addCarrito', props)
-        }
+  setup() {
+    const store = useStore();
+    const add = (props) => {
+      store.dispatch("addCarrito", props);
+    };
 
-        return {
-            add
-        }
-    },
+    return {
+      add,
+    };
+  },
   props: {
     id: {
       type: Number,
@@ -39,7 +39,10 @@ export default {
       type: Number,
       required: true,
     },
+    name: {
+      type: String,
+      required: false,
+    },
   },
-  
 };
 </script>

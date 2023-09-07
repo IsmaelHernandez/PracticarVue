@@ -1,5 +1,5 @@
 const Counter = {
-    path: '/counter',
+    path: '/counter-component',
     name: 'counter',
     component: () =>
         import('@/components/counter/Counter.vue'),
