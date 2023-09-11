@@ -1,29 +1,48 @@
-import { createRouter, createWebHistory } from 'vue-router';
-
-import Counter from '@/components/counter/Counter.vue'
-import Circle from '@/components/circle/Circle.vue'
-import Form from '@/components/form/FormComponent.vue'
-import List from '@/components/list/ListComponent.vue'
-import pokedex from '@/components/pokedex/view/Pokedex.vue'
-import Carrito from '@/components/carrito/Carrito.vue'
-import Dashboard from '@/components/dashboard/Dashboard.vue'
+import { createRouter, createWebHistory } from "vue-router";
 
 
 const routes = [
-    { path: '/', component: Dashboard },
-    { path: '/counter-component', component: Counter },
-    { path: '/circle-component', component: Circle },
-    { path: '/form-component', component: Form },
-    { path: '/list-component', component: List },
-    { path: '/pokedex-component', component: pokedex },
-    { path: '/carrito-component', component: Carrito },
-    
-   
+  {
+    path: '/',
+    name: 'dashboard',
+    component: () => import("@/components/dashboard/Dashboard.vue"),
+  },
+  {
+    path: '/circle',
+    name: 'circle',
+    component: () => import("@/components/circle/Circle.vue"),
+  },
+  {
+    path: '/form',
+    name: 'form',
+    component: () => import("@/components/form/FormComponent.vue"),
+  },
+  {
+    path: '/listUser',
+    name: 'list',
+    component: () => import("@/components/list/ListComponent.vue"),
+  },
+  {
+    path: '/pokedex',
+    name: 'pokedex',
+    component: () => import("@/components/pokedex/view/Pokedex.vue"),
+  },
+  {
+    path: '/counter',
+    name: 'counter',
+    component: () => import("@/components/counter/Counter.vue"),
+  },
+  {
+    path: '/person',
+    name: 'person',
+    component: () => import("@/components/person/Person.vue"),
+  },
+  
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes,
-})
+  history: createWebHistory(),
+  routes,
+});
 
 export default router;
