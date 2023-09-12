@@ -3,16 +3,22 @@ const state = () => ({
 });
 
 const actions = {
-  async addUsers({ commit }, newItem) {
+   addUsers({ commit }, newItem) {
     console.log("newItem", newItem);
     commit("addUsers", newItem);
   },
+  deleteUser({commit}, userId){
+    commit("deleteUser", userId)
+  }
 };
 
 const mutations = {
   addUsers(state, newItem) {
     state.users.push(newItem);
   },
+  deleteUser(state, userId){
+    state.users = state.users.filter(user => user.id !== userId);
+  }
 };
 
 const getters = {

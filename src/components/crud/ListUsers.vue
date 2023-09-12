@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { useStore } from "vuex";
+import { useStore, mapActions } from "vuex";
 
 export default {
   setup: () => ({
