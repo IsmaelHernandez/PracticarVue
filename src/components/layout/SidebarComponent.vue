@@ -30,6 +30,9 @@
         <li :class="{ active: isActive('/dashboard') }">
           <router-link :to="{ name: 'dashboard' }">Form User</router-link>
         </li>
+        <li :class="{ active: isActive('/sass-component') }">
+          <router-link :to="{ name: 'sass-component' }">Sass Component</router-link>
+        </li>
       </ul>
     </nav>
 

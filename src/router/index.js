@@ -42,6 +42,11 @@ const routes = [
         name: 'dashboard',
         component: () => import("@/components/dashboard/Dashboard.vue"),
       },
+      {
+        path: '/sass-component',
+        name: 'sass-component',
+        component: () => import("@/components/componentSass/SassComponent.vue"),
+      },
     ]
   }
   

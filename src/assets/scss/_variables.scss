@@ -1,0 +1,62 @@
+// Black to white colors
+$white: #fff !default;
+$light-f5: #f5f5f5 !default;
+$light-f9: #f9f9f9 !default;
+$light_gray: #f4f4f4 !default;
+$gray-244: rgb(244, 244, 244) !default;
+$gray-100: #f8f9fc !default;
+$gray-200: #eaecf4 !default;
+$gray-250: #ebebeb !default;
+$gray-300: #dddfeb !default;
+$gray-400: #d1d3e2 !default;
+$gray-500: #b7b9cc !default;
+$gray-600: #858796 !default;
+$gray-700: #6e707e !default;
+$gray-800: #5a5c69 !default;
+$gray-900: #3a3b45 !default;
+$gray-ed: #7e7d7d !default;
+$grey-color: #646464;
+$black: #000 !default;
+
+// Custom colors
+$light_sky: #bee5ee !default;
+$light_blue: #bee5ee !default;
+$input-borders: #d2e0e4;
+$cyan: #36b9cc !default;
+$green: #10c54e !default;
+$red: #d22f27 !default;
+$red-hover: #ad251e !default;
+$green_color: #00a455 !default;
+
+// Theming colors
+$primary-color: #032b3a !default;
+$secondary-color: #21c4ea !default;
+$alternative-color: #d2e0e4 !default;
+$second-alternative-color: #e6edef !default;
+$background-btn-color: #062a51;
+$background-btn-submit-color: #ffd066;
+$background-color: $white;
+$background-body-color: #eef0f2;
+$background-color-layout: $gray-250;
+$background-input: #a5a5a5;
+$text-color: #494949;
+$text-color-danger: #ec205f;
+$text-color-grey: #606060;
+$text-color-deactive: #d9d9d9;
+$form-input-background: #eeeeee;
+$hr-color: #21c4ea;
+$alert-color: #ff4b71;
+$input-background: #f9f9f9;
+$action-buttons: #eef0f2;
+
+//Medias querys
+$max-width-xxs: 480px;
+$max-width-xs: 576px;
+$max-width-xms: 640px;
+$max-width-sm: 767px;
+$max-width-md: 992px;
+$max-width-xmd: 1080px;
+$max-width-lg: 1200px;
+$max-width-xl: 1400px;
+$max-width-xxl: 1600px;
+$max-width-xxxl: 1700px;

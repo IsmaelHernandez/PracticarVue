@@ -1,0 +1,36 @@
+.container-article {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #1abc9c;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .item-article {
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: $cyan;
+  }
+
+  .title {
+    font-size: 30px;
+    color: $primary-color;
+    text-align: center;
+
+    &:hover {
+      color: $green;
+    }
+  }
+  .autor {
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+  }
+  .description {
+    color: #ffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
