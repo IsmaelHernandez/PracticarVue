@@ -11,6 +11,7 @@
           <li><router-link to="/listUser">List</router-link></li>
           <li><router-link to="/pokedex">Pokedex</router-link></li>
           <li><router-link to="/person">Person</router-link></li>
+         
         </ul>
       </div>
     </nav>
